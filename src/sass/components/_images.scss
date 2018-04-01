@@ -1,0 +1,23 @@
+.images {
+    background-color: $grey;
+}
+.images-content {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    @media #{$tablet} {
+        flex-wrap: wrap;
+    }
+    @media #{$mobile} {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        padding: 0 5px;
+        img {
+            @media #{$desktop} {
+                width: 100%;
+            }
+        }
+    }
+}

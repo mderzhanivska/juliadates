@@ -1,0 +1,28 @@
+{% macro render(user) %}
+
+<div class="ph-block__item item hide">
+  <div class="item__image">
+    <img src="{{user.photo}}" alt="">
+    <span class="item__ph-number">{{user.pics}}</span>
+    <span class="item__rate">{{user.type}}</span>
+  </div>
+  <div class="item__buttons">
+    <button class="item__btn"><img src="img/star.png" alt="">Избранное</button>
+    <button class="item__btn"><img src="img/message.png" alt="">Написать</button>
+  </div>
+  <div class="item__info">
+    <div class="info">
+      <span class="item__name">{{user.name}}</span>
+      <span class="item__comma">,</span>
+      <span class="item__age">{{user.age}}</span>
+      <span class="{% if user.online %}{{'item__online'}}{% endif %}"></span>
+    </div>
+    <div class="info">
+      <span class="item__city">{{user.city}}</span>
+      <span class="item__comma--black">,</span>
+      <span class="item__country">{{user.country}}</span>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

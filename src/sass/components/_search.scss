@@ -1,0 +1,276 @@
+.search {
+    padding-bottom: 30px;
+}
+.search-content {
+    padding-top: 50px;
+    &__title {
+        color: $black;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    @media #{$tablet} {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__search {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            background: url("../img/cross.png") no-repeat;
+        }
+    }
+    &__btn {
+        color: $white;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 2.8px;
+        width: 170px;
+        height: 50px;
+        border-radius: 5px;
+        background-image: linear-gradient(-45deg, #4e92ff 0%, #376cf8 100%);
+    }
+    &__range {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+.select {
+    position: relative;
+    width: 100%;
+    &__specs,
+    &__service,
+    &__date,
+    &__time {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        padding-left: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        option {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            outline: none;
+            border: none;
+        }
+    }
+    &__date {
+        color: grey;
+    }
+    span {
+        color: $black;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.8px;
+    }
+}
+
+.dropdown {
+    width: 170px;
+    display: inline-block;
+    background-color: #fff;
+    border-bottom: 1px solid $dark-grey;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    @media #{$tablet} {
+        font-size: 12px;
+    }
+    .select {
+        cursor: pointer;
+        display: block;
+        padding: 3px 10px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 20px;
+            right: 8px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            float: right;
+            line-height: 20px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 0 4px rgb(204, 204, 204)
+    }
+    &:active {
+        background-color: #f8f8f8
+    }
+    .active:hover,
+    .active {
+        box-shadow: 0 0 4px rgb(204, 204, 204);
+        border-radius: 5px 5px 0 0;
+        background-color: #f8f8f8;
+        .select {
+
+        }
+    }
+    .dropdown-menu {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        left: 0;
+        margin-top: 1px;
+        box-shadow: 0 1px 2px rgb(204, 204, 204);
+        border-radius: 0 1px 5px 5px;
+        overflow: hidden;
+        display: none;
+        max-height: 160px;
+        overflow-y: auto;
+        z-index: 9;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0;
+        list-style: none;
+        @media #{$tablet} {
+            font-size: 12px;
+        }
+        li {
+            padding: 10px;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                background-color: #f2f2f2
+            }
+            &:active {
+                background-color: #e2e2e2
+            }
+        }
+    }
+}
+.dropdown.active .select > img {
+    transform: rotate(180deg)
+}
+
+input[type=search] {
+    border-bottom: 1px solid $dark-grey;
+    padding: 10px;
+    color: $black;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    &::placeholder {
+        color: $black;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.8px;
+    }
+    &:focus {
+        &::placeholder {
+            color: #fff;
+        }
+    }
+}
+
+.range {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__title {
+        padding-right: 10px;
+        color: $black;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.8px;
+    }
+    &__slider {
+        position: relative;
+        .line {
+            position: absolute;
+            display: inline-block;
+            width: 70px;
+            height: 1px;
+            top: 5%;
+            left: 0;
+            background-color: $blue;
+            &:before, &:after {
+                position: absolute;
+                content: '';
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $blue;
+            }
+            &:before {
+                top: -4px;
+                left: 0;
+            }
+            &:after {
+                top: -4px;
+                right: 0;
+            }
+
+        }
+    }
+}
+
+.more-search {
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+    button {
+        position: relative;
+        padding-right: 20px;
+        padding-left: 5px;
+        color: $black;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.8px;
+        z-index:2;
+        background: $white;
+        &:after {
+            position: absolute;
+            content: '';
+            width: 13px;
+            height: 8px;
+            top: 12px;
+            right: 3px  ;
+            background: url("../img/arrow-down.png") no-repeat;
+        }
+
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        z-index: 1;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $dark-grey;
+    }
+}
+
+

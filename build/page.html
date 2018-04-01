@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="header-content__navigation nav">
+              <div class="nav__logo"> <img src="img/logo.png" alt=""> </div>
+              <div class="nav__block">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="#" class="nav__link">Поиск</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Мои переписки</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Избранное</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Кто смотрел</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-content__user user"> <span class="user__account">Премиум</span> <span class="user__credits">100 кредитов</span> <span class="user__img"><img src="img/man.png" alt=""></span> <a href="" class="user__dropdown"></a> </div>
+          </div>
+        </div>
+      </header>
+      <section class="images">
+        <div class="container">
+          <div class="images-content">
+            <div class="images-content__item"><img src="img/1.png" alt=""></div>
+            <div class="images-content__item"><img src="img/2.png" alt=""></div>
+            <div class="images-content__item"><img src="img/3.png" alt=""></div>
+            <div class="images-content__item"><img src="img/4.png" alt=""></div>
+            <div class="images-content__item"><img src="img/5.png" alt=""></div>
+            <div class="images-content__item"><img src="img/6.png" alt=""></div>
+            <div class="images-content__item"><img src="img/7.png" alt=""></div>
+            <div class="images-content__item"><img src="img/8.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="search">
+        <div class="container">
+          <div class="search-content">
+            <h2 class="search-content__title">Я ищу</h2>
+            <form action="" class="form">
+              <div class="form__item">
+                <div class="dropdown">
+                  <div class="select"> <span>Девушку</span> <img src="img/arrow-down.png" alt=""> </div> <input type="hidden" name="spec">
+                  <ul class="dropdown-menu">
+                    <li id="spec1">Девушку</li>
+                    <li id="spec2">Парня</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__item"> <input type="search" class="form__search" placeholder="Санкт-Петербург"> </div>
+              <div class="form__item">
+                <div class="form__range range"> <span class="range__title">Возраст</span>
+                  <div class="range__slider"> <span class="line"></span> </div>
+                </div>
+              </div>
+              <div class="form__item"> <button class="form__btn">НАЙТИ</button> </div>
+            </form>
+          </div>
+        </div>
+        <div class="more-search"> <button>Расширенный поиск</button> </div>
+      </section>
+      <section class="photos">
+        <div class="container">
+          <div class="filters"> <button class="filters__btn">Онлайн</button> <button class="filters__btn">Новые</button> <button class="filters__btn">Популярные</button> </div>
+          <div class="ph-block">
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic1.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Кристиночка</span> <span class="item__comma">,</span> <span class="item__age">28</span> <span class=""></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic2.png" alt=""> <span class="item__ph-number">3</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Диана</span> <span class="item__comma">,</span> <span class="item__age">20</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Самара</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic3.png" alt=""> <span class="item__ph-number">145</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Аня</span> <span class="item__comma">,</span> <span class="item__age">18</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Ростов-на-Дону</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic4.png" alt=""> <span class="item__ph-number">17</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Анжелика</span> <span class="item__comma">,</span> <span class="item__age">27</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Чебоксары</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic5.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Лариса</span> <span class="item__comma">,</span> <span class="item__age">32</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Москва</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic6.png" alt=""> <span class="item__ph-number">3</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Настя</span> <span class="item__comma">,</span> <span class="item__age">221</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Зеленоград</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic7.png" alt=""> <span class="item__ph-number">4</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Евгения</span> <span class="item__comma">,</span> <span class="item__age">30</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Ростов-на-Дону</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic8.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Ольга</span> <span class="item__comma">,</span> <span class="item__age">23</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic1.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Кристиночка</span> <span class="item__comma">,</span> <span class="item__age">32</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic2.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Кристиночка</span> <span class="item__comma">,</span> <span class="item__age">28</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic3.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Кристиночка</span> <span class="item__comma">,</span> <span class="item__age">28</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic4.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Кристиночка</span> <span class="item__comma">,</span> <span class="item__age">28</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+            <div class="ph-block__item item hide">
+              <div class="item__image"> <img src="img/pic5.png" alt=""> <span class="item__ph-number">12</span> <span class="item__rate">ТОП</span> </div>
+              <div class="item__buttons"> <button class="item__btn"><img src="img/star.png" alt="">Избранное</button> <button class="item__btn"><img src="img/message.png" alt="">Написать</button> </div>
+              <div class="item__info">
+                <div class="info"> <span class="item__name">Кристиночка</span> <span class="item__comma">,</span> <span class="item__age">28</span> <span class="item__online"></span> </div>
+                <div class="info"> <span class="item__city">Санкт-Петербург</span> <span class="item__comma--black">,</span> <span class="item__country">Россия</span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination" id="pagination"></div>
+        </div>
+        <div class="scroll-btn"><img src="img/btn-up.png" alt=""></div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-content__links links">
+              <ul class="links__list">
+                <li class="links__item"><a href="#">Правила</a></li>
+                <li class="links__item"><a href="#">Пользовательское соглашение</a></li>
+                <li class="links__item"><a href="#">О проекте</a></li>
+                <li class="links__item"><a href="#">Обратная связь</a></li>
+              </ul>
+            </div>
+            <div class="footer-content__rights"> ©«KIKI». Лучший on-line сервис по поиску спонсоров и содержанок, 2015-2017 <br> Администрация не несёт ответственности за размещённые анкеты. Вся информация на сайте предоставлена посетителями. </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

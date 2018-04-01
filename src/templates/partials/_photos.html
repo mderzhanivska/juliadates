@@ -1,0 +1,24 @@
+
+{% import "./_photo.html" as photoRender %}
+
+<section class="photos">
+  <div class="container">
+    <div class="filters">
+      <button class="filters__btn">Онлайн</button>
+      <button class="filters__btn">Новые</button>
+      <button class="filters__btn">Популярные</button>
+    </div>
+    <div class="ph-block">
+
+      {% for photo in photos %}
+        {{photoRender.render(photo)}}
+      {% endfor %}
+
+
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+  </div>
+  <div class="scroll-btn"><img src="img/btn-up.png" alt=""></div>
+</section>
+
