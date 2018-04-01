@@ -28,6 +28,8 @@ $('.dropdown-menu li').click(function() {
   $('.msg').html(msg + input + '</span>');
 });
 
+//scroll
+
   $('.scroll-btn').click(function() {
   $('html, body').animate({ scrollTop: $('section.banner').offset().top }, 'slow');
   return false;
